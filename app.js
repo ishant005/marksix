@@ -9,15 +9,14 @@ var outputbox=document.querySelector("#output-area");
 
 // };
 //  translatebutton.addEventListener("click",clickHandler)
-
+ 
   var url="https://api.funtranslations.com/translate/minion.json"
    function fullurl(inputtext){
 
       
   return url+"?"+"text="+inputtext
   }
-
-  function erroroccured(error){
+const erroroccured=(error)=>{
        console.log("error occured",error);
        alert("something went wrong")
   }
